@@ -1,0 +1,7 @@
+type: Windows_NT
+platform: win32
+release: 10.0.26200
+totalMemory: 15.71 GB
+freeMemory: 4.64 GB
+cpuModel: 12th Gen Intel(R) Core(TM) i5-12450HX
+cpuCores: undefined

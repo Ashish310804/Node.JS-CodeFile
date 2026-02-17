@@ -15,6 +15,6 @@ fs.readFile('example01.txt', 'utf8', (err, data) => {
     } else {
         console.log('File content:',data);
     }
-}); 
+});   
 
     

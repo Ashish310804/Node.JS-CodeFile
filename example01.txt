@@ -1,1 +1,2 @@
 This is an example of writing to a file in Node.js
+This newline is appended to the file.

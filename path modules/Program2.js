@@ -23,12 +23,15 @@ try {
         process.exit(1);
     }
     const allowedExtensions = [".jpg", ".jpeg", ".png", ".gif", ".webp"];
+
     const ext = path.extname(inputPath).toLowerCase();
+
     if (!allowedExtensions.includes(ext)) {
         console.error("Only image files are allowed!");
         process.exit(1);
     }
     const uploadDir = path.join(__dirname, "uploads");
+    
     if (!fs.existsSync(uploadDir)) {
         fs.mkdirSync(uploadDir, { recursive: true });
     }

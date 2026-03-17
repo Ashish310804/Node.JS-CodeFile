@@ -11,7 +11,6 @@ const fs = require("fs");
 const path = require("path");
 
 const inputPath = "C:\\Users\\Ashish Dwivedi\\OneDrive\\Pictures\\Screenshots\\wallpaper108.png";
-
 if (!inputPath) {
     console.error("Please provide image path!");
     process.exit(1);

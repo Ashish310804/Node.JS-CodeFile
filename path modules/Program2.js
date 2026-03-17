@@ -40,6 +40,7 @@ try {
     console.log("Image uploaded successfully!");
     console.log("Saved as:", newFileName);
     console.log("Location:", destPath);
-} catch (err) {
+} 
+catch (err) {
     console.error("Error uploading file:", err.message);
 }

@@ -31,7 +31,7 @@ try {
         process.exit(1);
     }
     const uploadDir = path.join(__dirname, "uploads");
-    
+
     if (!fs.existsSync(uploadDir)) {
         fs.mkdirSync(uploadDir, { recursive: true });
     }
@@ -39,7 +39,9 @@ try {
     const random = Math.floor(Math.random() * 10000);
     const newFileName = "image_" + timestamp + "_" + random + ext;
     const destPath = path.join(uploadDir, newFileName);
+
     fs.copyFileSync(inputPath, destPath); // using sync for simplicity
+    
     console.log("Image uploaded successfully!");
     console.log("Saved as:", newFileName);
     console.log("Location:", destPath);

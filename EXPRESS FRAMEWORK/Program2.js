@@ -34,6 +34,7 @@ app.get('/services', (req, res) => {
     res.send('This is the services page.');
 });
 
+
 //Defining a route for the /blog URL
 app.get('/blog', (req, res) => {
     res.send('This is the blog page.');

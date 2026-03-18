@@ -31,7 +31,7 @@ app.get('/products', (req, res) => {
 
 //Defining a route for the /services URL
 app.get('/services', (req, res) => {
-    res.send('This is the services page.');
+    res.send('This is services page.');
 });
 
 //Defining a route for the /blog URL

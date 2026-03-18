@@ -1,5 +1,3 @@
-//Creating a simple Express server
-
 //Importing the Express module
 const express = require('express');
 

@@ -29,6 +29,11 @@ app.get('/products', (req, res) => {
     res.send('This is the products page.');
 });
 
+//Defining a route for the /services URL
+app.get('/services', (req, res) => {
+    res.send('This is the services page.');
+});
+
 //Starting the server and listening on port 3000
 app.listen(3000, () => {
     console.log('Server is running on http://localhost:3000');

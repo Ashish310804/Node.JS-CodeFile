@@ -20,3 +20,6 @@ app.get('/', (req, res) => {
 });
 
 //Defining a route for the /about URL
+app.get('/about', (req, res) => {
+    res.send('This is the about page.');
+}   );

@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 //Defining a route for the root URL
 app.get('/', (req, res) => {
-    res.send('Hello, World!');
+    res.send('Hello, ASHIS!');
 });
 
 //Defining a route for the /about URL

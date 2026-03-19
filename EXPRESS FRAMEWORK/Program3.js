@@ -13,3 +13,8 @@ app.use((req, res, next) => {
     console.log(`${req.method} ${req.url}`);
     next(); // Call the next middleware or route handler
 });
+
+//Defining a route for the root URL
+app.get('/', (req, res) => {
+    res.send('Hello, World!');
+});

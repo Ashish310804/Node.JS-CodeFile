@@ -24,7 +24,8 @@ app.get('/about', (req, res) => {
     res.send('This is the about page.');
 });
 
-//starting the server and listening on port 3000
-app.listen(3000, () => {
-    console.log('Server is running on http://localhost:3000');
+//starting the server and listening on port 2000
+app.listen(2000, () => {
+    console.log('Server is running on http://localhost:2000');
 });
+

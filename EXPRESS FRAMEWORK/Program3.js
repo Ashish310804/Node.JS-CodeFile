@@ -23,3 +23,5 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.send('This is the about page.');
 });
+
+//starting the server and listening on port 3000

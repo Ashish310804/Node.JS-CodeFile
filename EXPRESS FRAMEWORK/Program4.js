@@ -3,7 +3,6 @@
 //Importing the Express module
 const express = require('express');
 
-//Creating an instance of the Express application
 const app = express();
 
 //Defining a route that accepts query parameters

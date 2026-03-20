@@ -1,7 +1,6 @@
 //Queries in Express Framework
 
 const express = require('express');
-
 const app = express();
 
 //Defining a route that accepts query parameters

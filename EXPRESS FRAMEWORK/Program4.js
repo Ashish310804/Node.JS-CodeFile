@@ -10,7 +10,7 @@ const app = express();
 app.get('/search', (req, res) => {
     const query = req.query.q;          // Accessing the 'q' query parameter
     if (query) {
-        res.send(`You searched for: ${query}`);
+        res.send("You searched for: " + query);
     } else {
         res.send('Please provide a search query using the "q" parameter.');
     }   

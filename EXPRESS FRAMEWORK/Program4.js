@@ -15,3 +15,5 @@ app.get('/search', (req, res) => {
         res.send('Please provide a search query using the "q" parameter.');
     }   
 });
+
+//Starting the server and listening on port 3000

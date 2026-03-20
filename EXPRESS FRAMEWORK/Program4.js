@@ -12,7 +12,7 @@ app.get('/search', (req, res) => {
     if (query) {
         res.send("You searched for: " + query);
     } else {
-        res.send('Please provide a search query using the "q" parameter');
+        res.send('Please provide a search query using the "q" parameter (e.g., /search?q=your+query)');
     }   
 });
 

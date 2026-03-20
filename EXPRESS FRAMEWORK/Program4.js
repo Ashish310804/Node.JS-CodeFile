@@ -8,7 +8,7 @@ const app = express();
 
 //Defining a route that accepts query parameters
 app.get('/search', (req, res) => {
-    const query = req.query.q;            // Accessing the 'q' query parameter
+    const query = req.query.q;          // Accessing the 'q' query parameter
     if (query) {
         res.send(`You searched for: ${query}`);
     } else {

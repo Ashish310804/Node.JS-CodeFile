@@ -23,5 +23,5 @@ To test this code:
 1. Run the server by executing this file (e.g., node Program4.js).
 2. Open a web browser and navigate to http://localhost:3000/search?q=your+query.
 3. You should see the response "You searched for: your query".
-
+4. If you navigate to http://localhost:3000/search without providing the 'q' parameter, you will see a message prompting you to provide a search query.
 */

@@ -4,7 +4,6 @@
 
 const express = require('express'); 
 
-//Creating an instance of the Express application
 const app = express();
 
 //Middleware to log the request method and URL

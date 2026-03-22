@@ -8,7 +8,7 @@ const app = express();
 
 //Middleware to log the request method & URL
 app.use((req, res, next) => {
-    console.log(`${req.method} ${req.url}`);      // Log the HTTP method and URL of request
+    console.log(`${req.method} ${req.url}`);       // Log the HTTP method and URL of request
     next();            // Call the next middleware or route handler
 });
 

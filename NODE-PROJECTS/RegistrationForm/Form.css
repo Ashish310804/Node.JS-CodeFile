@@ -1,0 +1,200 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+    background: radial-gradient(circle at 20% 20%, rgba(108, 241, 201, 0.12), transparent 25%),
+                radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.08), transparent 30%),
+                var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px 48px;
+}
+
+.page {
+    width: min(1024px, 100%);
+    display: grid;
+    gap: 18px;
+}
+
+.hero {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 20px 22px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(6px);
+    background: linear-gradient(to right, rgb(218, 166, 231),rgb(47, 3, 55));
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0 0 6px;
+}
+
+.hero h1 {
+    margin: 0 0 6px;
+    font-size: clamp(24px, 4vw, 32px);
+}
+
+.lede {
+    margin: 0;
+    color: var(--muted);
+    max-width: 720px;
+    line-height: 1.5;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    box-shadow: var(--shadow);
+    background: linear-gradient(circle, rgba(108, 15, 15, 0.392), rgba(221, 226, 229, 0.02));
+}
+
+.card h2 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width,
+.form-actions.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text);
+    outline: none;
+    transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+input:focus,
+select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(108, 241, 201, 0.15);
+    transform: translateY(-1px);
+}
+
+.chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.chip input {
+    width: auto;
+    accent-color: var(--primary-strong);
+}
+
+.chip:hover {
+    border-color: var(--primary);
+    background: rgba(108, 241, 201, 0.08);
+    transform: translateY(-1px);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+}
+
+.primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+    color: #0b1021;
+    box-shadow: 0 15px 30px rgba(108, 241, 201, 0.35);
+}
+
+.primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 18px 36px rgba(108, 241, 201, 0.45);
+}
+
+.ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.ghost:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 20px 12px 36px;
+    }
+
+    .card,
+    .hero {
+        padding: 18px;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .form-actions button {
+        flex: 1;
+    }
+}
+
+

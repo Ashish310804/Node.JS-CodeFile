@@ -12,4 +12,3 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     alert('Data saved to local storage!');
     this.reset();
 });
-

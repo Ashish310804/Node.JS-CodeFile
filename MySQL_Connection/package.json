@@ -1,16 +1,9 @@
 {
-  "name": "part4",
+  "name": "unit_4",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "main": "app.js",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.x",
+    "mysql": "^2.x"
   }
 }
